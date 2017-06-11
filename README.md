@@ -1,4 +1,5 @@
 ================================Captcha_Generator===============================
+
 It is a simple PHP program to generate captcha for form validation. It can be 
 integrated in any website for captcha generation.
 This project is based on converting text to image using PHP with help of GD.
@@ -11,4 +12,4 @@ It create 4 character and converts it to image.
     .colour
   
   
-  *************************************END****************************************
+  *************************************#END#*************************************
