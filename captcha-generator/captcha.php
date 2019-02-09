@@ -9,5 +9,5 @@
   $_SESSION['secure']=$text;
 ?>
 <div style="width: 158px;height: 60px;">
-  <img src="img_gen.php">
+  <img src="./captcha-generator/img_gen.php">
 </div>
