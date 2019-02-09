@@ -7,6 +7,7 @@
 //STARTING AND CREATING SESSION
   session_start();
   $_SESSION['secure']=$text;
-
 ?>
-<img src="http://localhost/Captcha_Generator/img_gen.php">
+<div style="width: 158px;height: 60px;">
+  <img src="img_gen.php">
+</div>
