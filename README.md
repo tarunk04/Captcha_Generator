@@ -13,8 +13,8 @@ Silent Features
 Installation
 ================
 * Clone this repository:  
-```shell
-git https://github.com/tarunk04/fZend.git
+```console
+git clone https://github.com/tarunk04/fZend.git
 ```
 or click `Download ZIP` in right panel of repository and extract it.
 * Copy `captcha-generator` folder into the project directory.
