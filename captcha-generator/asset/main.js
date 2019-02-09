@@ -1,5 +1,5 @@
 
-document.getElementById('ae_captcha_api').innerHTML = "<div style='float: left ; height : 60px; width:200px; min-width: 170px;' id='divcaptcha'><img src='./captcha-generator/img_gen.php'></div>";
+document.getElementById('ae_captcha_api').innerHTML = "<div style='float: left ; height : 60px; width:200px; min-width: 170px;' id='divcaptcha'><img src='./captcha-generator/img_gen.php'></div><a class='fa fa-refresh'  type='button' onclick='newcaptcha()'><button>Refresh</button></a>";
 
 function newcaptcha(){
   var dataString = 'index=1';
