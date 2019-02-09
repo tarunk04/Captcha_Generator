@@ -9,4 +9,4 @@
   $_SESSION['secure']=$text;
 
 ?>
-<img src="img_gen.php">
+<img src="http://localhost/Captcha_Generator/img_gen.php">

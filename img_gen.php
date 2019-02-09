@@ -1,6 +1,13 @@
 <?php
 //STARTING  SESSION
-  session_start();
+  //GENERATING RANDOM 4 CHARACTER FOR CAPTCHA
+    $string='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefhijklmnopqrstuvwxyz1234567890';
+    $string_shuff=str_shuffle($string);
+    $text=substr($string_shuff,0,4);
+
+  //STARTING AND CREATING SESSION
+    session_start();
+    $_SESSION['secure']=$text;
 //DEFINING CONTENT TYPE TO IMAGE - JPEG
   header('content-type: image/jpeg');
 //GETTING SESSION VARIABLE
@@ -14,7 +21,7 @@
   imagecolorallocate($image, 255 ,255, 255);
 
 
-//FOR LOOP FOR CREATING TEXT 
+//FOR LOOP FOR CREATING TEXT
   for ($i=1; $i<=4;$i++){
     //CREATING RANDOM FONT-SIZE
       $font_size=rand(22,27);
@@ -36,7 +43,7 @@
   }
 //FOR LOOP FOR CREATING RANDOM LINES
   for($i=1; $i<=30;$i++){
-    //RANDOM STARTING AND ENDING POSITION 
+    //RANDOM STARTING AND ENDING POSITION
       $x1= rand(1,150);
       $y1= rand(1,150);
       $x2= rand(1,150);
