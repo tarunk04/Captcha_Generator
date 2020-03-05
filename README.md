@@ -31,11 +31,14 @@ Validating captcha
 * Create a form with a `Text Field` and `Button` to send the user input to server using `POST` method.
 * On server side use session variable `$_SESSION['secure']` for validating captch. For example:
 ```php
-if($_SESSION['secure'] == $_POST['user_input']){
-  echo "captcha validated.";
-} 
-else{
-  echo "captcha validation failed.";
-}
+<?php 
+	session_start();
+	if($_SESSION['secure'] == $_POST['user_input']){
+	  echo "captcha validated.";
+	} 
+	else{
+	  echo "captcha validation failed.";
+	}
+?>
 ```
 ---------------------------------------------
