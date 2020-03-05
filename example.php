@@ -5,8 +5,11 @@
     <title>Example Captcha</title>
   </head>
   <body>
-    <div id="ae_captcha_api">
-    </div>
-    <script src="./captcha-generator/asset/main.js"></script>
+    <form method = "POST" >
+		<div id="ae_captcha_api"></div>
+		<div><input type="text" placeholder = "Enter Captcha" name="user_input"/></div>
+		<div><input type="submit" formaction="./validate.php" value = "Submit"/></div>
+	</form>
+	<script src="./captcha-generator/asset/main.js"></script>
   </body>
 </html>
