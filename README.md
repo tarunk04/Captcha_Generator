@@ -14,7 +14,7 @@ Installation
 ================
 * Clone this repository:  
 ```console
-git clone https://github.com/tarunk04/fZend.git
+git clone https://github.com/tarunk04/Captcha_Generator
 ```
 or click `Download ZIP` in right panel of repository and extract it.
 * Copy `captcha-generator` folder into the project directory.
