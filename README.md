@@ -13,32 +13,32 @@ Silent Features
 Installation
 ================
 * Clone this repository:  
-```console
-git clone https://github.com/tarunk04/Captcha_Generator
-```
-or click `Download ZIP` in right panel of repository and extract it.
+	```console
+	git clone https://github.com/tarunk04/Captcha_Generator
+	```
+	or click `Download ZIP` in right panel of repository and extract it.
 * Copy `captcha-generator` folder into the project directory.
 * Copy this line to HTML or PHP file of the project.
-```html
-<div id="ae_captcha_api"></div>
-```
+	```html
+	<div id="ae_captcha_api"></div>
+	```
 * Copy this script import line at the bottom of the body of same HTML or PHP file.
-```html
-<script src="./captcha-generator/asset/main.js"></script>
-```
+	```html
+	<script src="./captcha-generator/asset/main.js"></script>
+	```
 Validating captcha 
 ===================
 * Create a form with a `Text Field` and `Button` to send the user input to server using `POST` method.
 * On server side use session variable `$_SESSION['secure']` for validating captch. For example:
-```php
-<?php 
-	session_start();
-	if($_SESSION['secure'] == $_POST['user_input']){
-	  echo "captcha validated.";
-	} 
-	else{
-	  echo "captcha validation failed.";
-	}
-?>
-```
+	```php
+	<?php 
+		session_start();
+		if($_SESSION['secure'] == $_POST['user_input']){
+		  echo "captcha validated.";
+		} 
+		else{
+		  echo "captcha validation failed.";
+		}
+	?>
+	```
 ---------------------------------------------
