@@ -1,4 +1,4 @@
-Captcha Generator
+Captcha Generator[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/tarunk04/Captcha_Generator/blob/master/LICENSE)
 =================
 
 It is a simple PHP program to generate captcha for form validation. It can be integrated in any website for captcha generation. This project is based on converting text to image using PHP with help of GD. It create 4 character and converts it to image.
